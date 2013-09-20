@@ -44,7 +44,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#" data-bind="click: $root.goToPage">Action</a></li>
+                <li><a href="#">Action</a></li>
                 <li><a href="#">Another action</a></li>
                 <li><a href="#">Something else here</a></li>
                 <li class="divider"></li>
@@ -72,7 +72,7 @@
       <div class="container">
         <h1>Hello, world!</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p>Your Name is <strong><span data-bind="text: fullName"></span></strong></p>
+        
         <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
       </div>
     </div>
@@ -84,12 +84,41 @@
           <h2>Your Name</h2>
           <p>First name: <input data-bind="value: firstName" /></p>
           <p>Last name: <input data-bind="value: lastName" /></p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+          <p>Your Name is <strong><span data-bind="text: fullName"></span></strong></p>
         </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+          <h2>Test Data</h2>
+          <p><a class="btn btn-default" href="#" data-bind="click: fillmydata">Get Data &raquo;</a></p>
+          <table class="table">
+            <tr>
+              <th>Name</th>
+              <td data-bind="text: dataName"></td>
+            </tr>
+            <tr>
+              <th>State</th>
+              <td data-bind="text: dataState"></td>
+            </tr>
+            <tr>
+              <th>City</th>
+              <td data-bind="text: dataCity"></td>
+            </tr>
+            <tr>
+              <th>State</th>
+              <td data-bind="text: dataState"></td>
+            </tr>
+            <tr>
+              <th>Phone</th>
+              <td data-bind="text: dataPhone"></td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td data-bind="text: dataEmail"></td>
+            </tr>
+            <tr>
+              <th>Age</th>
+              <td data-bind="text: dataAge"></td>
+            </tr>
+          </table>
        </div>
         <div class="col-lg-4">
           <h2>Heading</h2>

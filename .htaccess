@@ -1,0 +1,4 @@
+
+
+RewriteEngine on
+RewriteRule ^api/([a-z0-9]+)/$  http://%{HTTP_HOST}/api/api.php?action=$1 [L,NC,QSA]
